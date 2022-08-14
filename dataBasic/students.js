@@ -63,16 +63,17 @@ const studentUpdateControllerById = (req,res) => {
     const libary =DS.readFile(fileName)
     let id = req.params.id
     let student = req.body
+    let index = libary.students.findIndex(s => s.id == id)
     if(!validateStudent(res, student)){
         return
     }
-    if(!libary.students[id-1]){
+    if(!libary.students[index]){
         res.status(404).json(`${id}--id student not found`)
         return
     }
-    student.createdAt = libary.students[id-1].createdAt
+    student.createdAt = libary.students[index].createdAt
     student.updatedAt = new Date()
-    libary.students[id-1] = student
+    libary.students[index] = student
     DS.saveFile(libary, fileName)
     res.status(200).json("Successfuly updated..!")
 }

@@ -31,24 +31,24 @@ const BookedController = (req, res) => {
             })
 
             DS.saveFile(library, fileName)
-            res.status(200),json("Successfuly created..!")
-            return
-        }else{
-            if (find1.returned_day != null){
-                library.dataCustomers.push({
-                    students_id: idS,
-                    book_id: idB,
-                    booked_day: new Date(),
-                    returned_day: null,
-                    created_at: new Date()
-                })
-                DS.saveFile(library, fileName)
-                res.status(200).json("Successfuly created..!")
-                return
-            }
-            res.status(200).json("book isn't returned..!")
+            res.status(200).json("Successfuly created..!")
             return
         }
+        if (find1.returned_day != null){
+            library.dataCustomers.push({
+                students_id: idS,
+                book_id: idB,
+                booked_day: new Date(),
+                returned_day: null,
+                created_at: new Date()
+            })
+            DS.saveFile(library, fileName)
+            res.status(200).json("Successfuly created..!")
+            return
+        }
+        res.status(200).json("book isn't returned..!")
+        return    
+        
     } else{
         res.status(400).json("student_id and book_id are required!")
     }

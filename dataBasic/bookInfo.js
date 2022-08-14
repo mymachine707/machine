@@ -59,13 +59,18 @@ const bookUpdateControllerById = (req,res) => {
     const libary = DS.readFile(fileName)
     let id = req.params.id
     let book = req.body
+    let index = libary.books.findIndex(b => b.id == id)
     if(!validatebooks(res, book)){
         return
     }
+    if(!libary.books[index]){
+        res.status(404).json(`${id}--id book not found`)
+        return
+    }
 
-    book.createdAt = libary.books[id-1].createdAt
+    book.createdAt = libary.books[index].createdAt
     book.updatedAt = new Date()
-    libary.books[id-1] = book
+    libary.books[index] = book
     DS.saveFile(libary, fileName)
     res.status(200).json("successfuly updated..!")
 }
