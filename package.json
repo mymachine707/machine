@@ -1,0 +1,16 @@
+{
+  "name": "machine",
+  "version": "1.0.0",
+  "description": "CRUD for Project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node router.js",
+    "dev": "nodemon router.js"
+  },
+  "author": "Islombek Oripov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

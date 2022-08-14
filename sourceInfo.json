@@ -1,0 +1,122 @@
+{
+	"students": [
+		{
+			"id": 3,
+			"firstName": "Shomansur",
+			"lastName": "Shavkatov",
+			"email": "shavkatov444@gmail.com",
+			"phone": "+998900933939",
+			"birthdayDate": "24-03-1998",
+			"address": "96b Tinchlik street, Yashnabod",
+			"createdAt": "2022-08-14T19:36:48.536Z"
+		},
+		{
+			"id": 4,
+			"firstName": "Jamshit",
+			"lastName": "Ravshanov",
+			"email": "jamshit1996@gmail.com",
+			"phone": "+998946067898",
+			"birthdayDate": "31.10.1996",
+			"address": "Anorzor street, Yunusobod",
+			"createdAt": "2022-08-14T11:19:06.825Z"
+		}
+	],
+	"books": [
+		{
+			"id": "1",
+			"isbn": "978-9876543210",
+			"title": "who will cry, when you die",
+			"gener": "relaxs",
+			"decription": "1-Sentence-Summary: Who Will Cry When You Die? helps you leave a lasting legacy of greatness after you're gone by giving specific tips on how to become the best version of yourself and the kind that makes others grateful for all of your contributions to their lives and the world.",
+			"author": "Robin Sharma",
+			"publishyear": "1999",
+			"books_photo_url": "https://images-na.ssl-images-amazon.com/images/I/51m2o0HOtgL._SX339_BO1,204,203,200_.jpg",
+			"createdAt": "2022-08-14T19:36:48.536Z"
+		},
+		{
+			"id": "2",
+			"isbn": "978-0451205360",
+			"title": "The Richest Man in Babylon 3",
+			"gener": "Non-fiction",
+			"decription": "The Richest Man in Babylon is a 1926 book by George S. Clason that dispenses financial advice through a collection of parables set 4,000 years ago in ancient Babylon. The book remains in print almost a century after the parables were originally published, and is regarded as a classic of personal financial advice.",
+			"author": "George S. Clason",
+			"publishyear": "1926",
+			"books_photo_url": "url.jpeg",
+			"createdAt": "2022-08-14T19:36:48.536Z",
+			"updatedAt": "2022-08-14T11:52:53.195Z"
+		},
+		{
+			"id": "3",
+			"isbn": "1-4516-4853-7",
+			"title": "Steve Jobs",
+			"gener": "Biography",
+			"decription": "Steve Jobs is the authorized self-titled biography of American business magnate and Apple co-founder Steve Jobs. The book was written at the request of Jobs by Walter Isaacson, a former executive at CNN and TIME who has written best-selling biographies of Benjamin Franklin and Albert Einstein.",
+			"author": "Walter Isaacson",
+			"publishyear": "2011",
+			"books_photo_url": "url.jpeg",
+			"createdAt": "2022-08-14T19:36:48.536Z"
+		}
+	],
+	"dataCustomers": [
+		{
+			"students_id": 1,
+			"book_id": 1,
+			"returned_day": "2022-08-14T12:17:59.275Z",
+			"created_at": "2022-08-14T12:17:59.275Z"
+		},
+		{
+			"students_id": 2,
+			"book_id": 3,
+			"returned_day": "2022-08-14T12:18:07.879Z",
+			"created_at": "2022-08-14T12:18:07.879Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 2,
+			"returned_day": "2022-08-14T12:18:18.907Z",
+			"created_at": "2022-08-14T12:18:18.907Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 1,
+			"booked_day": "2022-08-14T12:19:36.411Z",
+			"returned_day": "2022-08-14T12:24:13.036Z",
+			"created_at": "2022-08-14T12:24:13.036Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 2,
+			"booked_day": "2022-08-14T12:23:44.221Z",
+			"returned_day": "2022-08-14T12:24:14.826Z",
+			"created_at": "2022-08-14T12:24:14.826Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 2,
+			"booked_day": "2022-08-14T12:23:51.387Z",
+			"returned_day": "2022-08-14T12:24:23.134Z",
+			"created_at": "2022-08-14T12:24:23.134Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 3,
+			"booked_day": "2022-08-14T12:24:48.034Z",
+			"returned_day": null,
+			"created_at": "2022-08-14T12:24:48.034Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 1,
+			"booked_day": "2022-08-14T12:24:55.096Z",
+			"returned_day": null,
+			"created_at": "2022-08-14T12:24:55.096Z"
+		},
+		{
+			"students_id": 3,
+			"book_id": 1,
+			"booked_day": "2022-08-14T12:54:39.995Z",
+			"returned_day": null,
+			"created_at": "2022-08-14T12:54:39.995Z"
+		}
+	]
+}
